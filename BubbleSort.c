@@ -16,9 +16,8 @@
  */
 void main(){
 
-	int i, j, temp;
+	int i, j, n, temp;
 	printf("Enter the number of elements of the array");
-	int n;
 	scanf("%d",&n);
 	int arr[n];
 	printf("Enter the array: ");
@@ -28,8 +27,8 @@ void main(){
 	}
 
 
-	for(i = 0; i < n; i++){
-		for(j = i+1; j < n-i-1 ; j++){
+	for(i = 0; i < n-1; i++){
+		for(j = 0; j < n-i-1 ; j++){
 			if(arr[j] > a[j+1]){
 				temp = arr[j];
 				arr[j] = arr[j+1];
